@@ -7,16 +7,16 @@ class ApiService {
   ApiService() {
     BaseOptions options = BaseOptions(
       baseUrl: KBaseUrl,
-      receiveDataWhenStatusError: true,
+      // receiveDataWhenStatusError: true,
       connectTimeout: const Duration(seconds: 60),
       receiveTimeout: const Duration(seconds: 60),
     );
-    
-    _dio = Dio(options);
+
+    _dio = Dio();
   }
 
   Future<Map<String, dynamic>> get({required String endPoint}) async {
-    var response = await _dio.get('$endPoint');
+    var response = await _dio.get('$KBaseUrl$endPoint');
 
     return response.data;
   }

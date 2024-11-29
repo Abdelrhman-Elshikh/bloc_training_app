@@ -13,7 +13,7 @@ class CharacterRepoImpl implements CharacterRepo {
   @override
   Future<Either<Failure, List<CharacterModel>>> getAllCharacters() async {
     try {
-      var data = await apiService.get(endPoint: 'character');
+      var data = await apiService.get(endPoint: '/character');
 
       List<CharacterModel> characters = [];
       for (var character in data["results"]) {
