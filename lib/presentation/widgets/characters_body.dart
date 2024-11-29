@@ -15,7 +15,10 @@ class CharactersBody extends StatelessWidget {
         if (state is CharactersSuccess && state is CharactersFailure) {
           return const Center(child: CircularProgressIndicator());
         } else if (state is CharactersSuccess) {
-          return CharacterGridView(characters: state.characters);
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: CharacterGridView(characters: state.characters),
+          );
         } else if (state is CharactersFailure) {
           return Center(child: Text(state.errorMassage));
         } else {

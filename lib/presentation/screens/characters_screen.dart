@@ -12,6 +12,7 @@ class CharactersScreen extends StatelessWidget {
           title: const Text('Characters'),
           backgroundColor: CustomColors.KYellow,
         ),
+        backgroundColor: CustomColors.KGrey,
         body: const SafeArea(child: CharactersBody()));
   }
 }

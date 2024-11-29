@@ -5,13 +5,6 @@ class ApiService {
   late Dio _dio;
 
   ApiService() {
-    BaseOptions options = BaseOptions(
-      baseUrl: KBaseUrl,
-      // receiveDataWhenStatusError: true,
-      connectTimeout: const Duration(seconds: 60),
-      receiveTimeout: const Duration(seconds: 60),
-    );
-
     _dio = Dio();
   }
 

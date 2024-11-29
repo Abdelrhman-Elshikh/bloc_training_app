@@ -9,33 +9,47 @@ class CharacterItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: CustomColors.KWhite,
+      ),
       width: double.infinity,
       height: double.infinity,
-      color: CustomColors.KWhite,
-      child: GridTile(
-        footer: Container(
-          color: Colors.black45,
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-          alignment: Alignment.bottomCenter,
-          child: Text(
-            character.name ?? '',
-            style: const TextStyle(
-              height: 1.3,
-              fontSize: 16,
-              color: CustomColors.KWhite,
-              fontWeight: FontWeight.bold,
+      child: Padding(
+        padding: const EdgeInsets.all(5.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10.0),
+          child: GridTile(
+            footer: Container(
+              decoration:const BoxDecoration(
+                borderRadius:
+                    BorderRadius.vertical(bottom: Radius.circular(10.0)),
+                color: Colors.black45,
+              ),
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              alignment: Alignment.bottomCenter,
+              child: Text(
+                character.name ?? '',
+                style: const TextStyle(
+                  height: 1.3,
+                  fontSize: 16,
+                  color: CustomColors.KWhite,
+                  fontWeight: FontWeight.bold,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+              ),
             ),
-            overflow: TextOverflow.ellipsis,
-            maxLines: 2,
+            child: character.image != null
+                ? FadeInImage.assetNetwork(
+                    placeholder: 'assets/images/loading.gif',
+                    image: character.image!,
+                    fit: BoxFit.cover,
+                  )
+                : Image.asset('assets/images/place_holder.jpg'),
           ),
         ),
-        child: character.image != null
-            ? FadeInImage.assetNetwork(
-                placeholder: 'assets/images/loading.gif',
-                image: character.image!, 
-                fit: BoxFit.cover,)
-            : Image.asset('assets/images/place_holder.jpg'),
       ),
     );
   }
