@@ -7,12 +7,8 @@ class CharactersScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text('Characters'),
-          backgroundColor: CustomColors.KYellow,
-        ),
+    return const Scaffold(
         backgroundColor: CustomColors.KGrey,
-        body: const SafeArea(child: CharactersBody()));
+        body: SafeArea(child: CharactersBody()));
   }
 }

@@ -14,6 +14,7 @@ class CharacterGridView extends StatelessWidget {
           childAspectRatio: 2 / 3,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
+        
         ),
         itemCount: characters.length,
         itemBuilder: (context, index) {

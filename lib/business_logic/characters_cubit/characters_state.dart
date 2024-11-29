@@ -18,6 +18,14 @@ final class CharactersSuccess extends CharactersState {
   @override
   List<Object?> get props => [characters];
 }
+final class CharactersSearching extends CharactersState {
+  final List<CharacterModel> characters;
+
+  CharactersSearching(this.characters);
+
+  @override
+  List<Object?> get props => [characters];
+}
 
 final class CharactersFailure extends CharactersState {
   final String errorMassage;

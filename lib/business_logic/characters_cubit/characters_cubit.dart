@@ -11,6 +11,8 @@ class CharactersCubit extends Cubit<CharactersState> {
 
   CharactersCubit(this.characterRepo) : super(CharactersInitial());
 
+  List<CharacterModel> characters = [];
+
   Future fetchAllCharacters() async {
     emit(CharactersLoading());
 
@@ -19,7 +21,24 @@ class CharactersCubit extends Cubit<CharactersState> {
     result.fold((failure) {
       emit(CharactersFailure(failure.errMessage));
     }, (characters) {
+      this.characters = characters;
       emit(CharactersSuccess(characters));
     });
+  }
+
+  void showAllCharacters() {
+    emit(CharactersSuccess(characters));
+  }
+
+  void searchingForCharacter(String searchPattern) {
+    emit(
+      CharactersSearching(
+        characters.where((character) {
+          return character.name!.toLowerCase().startsWith(
+                searchPattern.toLowerCase(),
+              );
+        }).toList(),
+      ),
+    );
   }
 }
