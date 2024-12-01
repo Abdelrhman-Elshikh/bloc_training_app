@@ -1,5 +1,6 @@
-import 'package:bloc_training_app/utils/constances/strings.dart';
 import 'package:dio/dio.dart';
+
+import '../../utils/constances/strings.dart';
 
 class ApiService {
   late Dio _dio;

@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:bloc_training_app/data/models/character/character_model.dart';
-import 'package:bloc_training_app/data/repositiries/character_repo.dart';
+import '../../data/models/character/character_model.dart';
+import '../../data/repositiries/character_repo.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 

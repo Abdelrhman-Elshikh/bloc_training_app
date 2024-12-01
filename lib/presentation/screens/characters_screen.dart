@@ -1,5 +1,5 @@
-import 'package:bloc_training_app/presentation/widgets/characters_body.dart';
-import 'package:bloc_training_app/utils/constances/custom_colors.dart';
+import '../widgets/characters_body.dart';
+import '../../utils/constances/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class CharactersScreen extends StatelessWidget {

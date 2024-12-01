@@ -1,6 +1,6 @@
-import 'package:bloc_training_app/business_logic/characters_cubit/characters_cubit.dart';
-import 'package:bloc_training_app/presentation/widgets/character_grid_view.dart';
-import 'package:bloc_training_app/presentation/widgets/custom_app_bar.dart';
+import '../../business_logic/characters_cubit/characters_cubit.dart';
+import 'character_grid_view.dart';
+import 'custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

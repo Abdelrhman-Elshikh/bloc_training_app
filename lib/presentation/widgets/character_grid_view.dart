@@ -1,5 +1,5 @@
-import 'package:bloc_training_app/data/models/character/character_model.dart';
-import 'package:bloc_training_app/presentation/widgets/character_item.dart';
+import '../../data/models/character/character_model.dart';
+import 'character_item.dart';
 import 'package:flutter/material.dart';
 
 class CharacterGridView extends StatelessWidget {

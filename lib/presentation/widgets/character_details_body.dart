@@ -1,5 +1,5 @@
-import 'package:bloc_training_app/data/models/character/character_model.dart';
-import 'package:bloc_training_app/utils/constances/custom_colors.dart';
+import '../../data/models/character/character_model.dart';
+import '../../utils/constances/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class CharacterDetailsBody extends StatelessWidget {
@@ -104,7 +104,7 @@ class CharacterDetailsBody extends StatelessWidget {
           Container(
               margin: const EdgeInsets.all(16),
               padding: const EdgeInsets.all(16),
-              child: Column(
+              child: const Column(
                 children: [
                   SizedBox(
                     height: 1800,

@@ -1,6 +1,6 @@
-import 'package:bloc_training_app/data/models/character/character_model.dart';
-import 'package:bloc_training_app/presentation/widgets/character_details_body.dart';
-import 'package:bloc_training_app/utils/constances/custom_colors.dart';
+import '../../data/models/character/character_model.dart';
+import '../widgets/character_details_body.dart';
+import '../../utils/constances/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {

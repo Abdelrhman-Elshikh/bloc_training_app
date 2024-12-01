@@ -1,7 +1,7 @@
-import 'package:bloc_training_app/data/models/character/character_model.dart';
-import 'package:bloc_training_app/utils/constances/custom_colors.dart';
-import 'package:bloc_training_app/utils/routers/routers.dart';
-import 'package:bloc_training_app/utils/routers/routes.dart';
+import '../../data/models/character/character_model.dart';
+import '../../utils/constances/custom_colors.dart';
+import '../../utils/routers/routers.dart';
+import '../../utils/routers/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

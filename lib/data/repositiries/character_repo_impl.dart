@@ -1,7 +1,7 @@
-import 'package:bloc_training_app/data/apis/api_service.dart';
-import 'package:bloc_training_app/data/models/character/character_model.dart';
-import 'package:bloc_training_app/data/repositiries/character_repo.dart';
-import 'package:bloc_training_app/utils/failure.dart';
+import '../apis/api_service.dart';
+import '../models/character/character_model.dart';
+import 'character_repo.dart';
+import '../../utils/failure.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 

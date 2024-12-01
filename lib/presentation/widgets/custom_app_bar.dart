@@ -1,5 +1,5 @@
-import 'package:bloc_training_app/presentation/widgets/default_app_bar.dart';
-import 'package:bloc_training_app/presentation/widgets/searching_app_bar.dart';
+import 'default_app_bar.dart';
+import 'searching_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatefulWidget {

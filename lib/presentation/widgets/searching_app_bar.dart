@@ -1,5 +1,5 @@
-import 'package:bloc_training_app/business_logic/characters_cubit/characters_cubit.dart';
-import 'package:bloc_training_app/utils/constances/custom_colors.dart';
+import '../../business_logic/characters_cubit/characters_cubit.dart';
+import '../../utils/constances/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,4 +1,4 @@
-import 'package:bloc_training_app/utils/constances/custom_colors.dart';
+import '../../utils/constances/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class DefaultAppBar extends StatelessWidget {
